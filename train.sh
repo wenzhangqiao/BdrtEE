@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 nohup python -u main.py --output_model_path ./models_save/model.bin --do_train True --do_eval True --do_test True > logs/model.log &

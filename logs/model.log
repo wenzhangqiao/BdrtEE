@@ -1,0 +1,339 @@
+loading configuration file config.json from cache at ./plm/models--bert-base-chinese/snapshots/84b432f646e4047ce1b5db001d43a348cd3f6bd0/config.json
+Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.22.0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 21128
+}
+
+loading file vocab.txt from cache at ./plm/models--bert-base-chinese/snapshots/84b432f646e4047ce1b5db001d43a348cd3f6bd0/vocab.txt
+loading file added_tokens.json from cache at None
+loading file special_tokens_map.json from cache at None
+loading file tokenizer_config.json from cache at ./plm/models--bert-base-chinese/snapshots/84b432f646e4047ce1b5db001d43a348cd3f6bd0/tokenizer_config.json
+loading configuration file config.json from cache at ./plm/models--bert-base-chinese/snapshots/84b432f646e4047ce1b5db001d43a348cd3f6bd0/config.json
+Model config BertConfig {
+  "_name_or_path": "bert-base-chinese",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.22.0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 21128
+}
+
+loading configuration file config.json from cache at ./plm/models--bert-base-chinese/snapshots/84b432f646e4047ce1b5db001d43a348cd3f6bd0/config.json
+Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.22.0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 21128
+}
+
+loading weights file pytorch_model.bin from cache at ./plm/models--bert-base-chinese/snapshots/84b432f646e4047ce1b5db001d43a348cd3f6bd0/pytorch_model.bin
+Some weights of the model checkpoint at bert-base-chinese were not used when initializing BertModel: ['cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+All the weights of BertModel were initialized from the model checkpoint at bert-base-chinese.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use BertModel for predictions without further training.
+For simplicity, reset batch_size=1 to extract each sentence
+Test set evaluation with oracle.
+BdrtEE
+0it [00:00, ?it/s]/home/wzq/BdrtEE/utils/framework.py:139: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  /opt/conda/conda-bld/pytorch_1634272068694/work/torch/csrc/utils/tensor_new.cpp:201.)
+  typ_truth = torch.FloatTensor(typ_truth).to(device)
+
+1it [00:01,  1.58s/it]
+4it [00:01,  3.04it/s]
+7it [00:01,  5.64it/s]
+10it [00:01,  8.48it/s]
+14it [00:02, 12.75it/s]
+18it [00:02, 16.88it/s]
+21it [00:02, 18.46it/s]
+24it [00:02, 19.67it/s]
+28it [00:02, 23.83it/s]
+32it [00:02, 25.93it/s]
+36it [00:02, 25.81it/s]
+39it [00:02, 25.25it/s]
+43it [00:03, 27.68it/s]
+46it [00:03, 28.01it/s]
+50it [00:03, 28.41it/s]
+53it [00:03, 27.03it/s]
+56it [00:03, 27.05it/s]
+60it [00:03, 28.68it/s]
+64it [00:03, 29.92it/s]
+68it [00:03, 27.64it/s]
+71it [00:04, 27.54it/s]
+75it [00:04, 28.75it/s]
+79it [00:04, 30.08it/s]
+83it [00:04, 27.75it/s]
+86it [00:04, 27.63it/s]
+90it [00:04, 28.85it/s]
+93it [00:04, 29.01it/s]
+96it [00:04, 27.36it/s]
+99it [00:05, 26.10it/s]
+103it [00:05, 28.34it/s]
+107it [00:05, 28.84it/s]
+110it [00:05, 27.78it/s]
+113it [00:05, 26.58it/s]
+117it [00:05, 28.15it/s]
+121it [00:05, 28.43it/s]
+124it [00:05, 27.04it/s]
+127it [00:06, 26.07it/s]
+131it [00:06, 28.58it/s]
+135it [00:06, 28.73it/s]
+138it [00:06, 27.28it/s]
+141it [00:06, 26.24it/s]
+145it [00:06, 28.42it/s]
+149it [00:06, 30.55it/s]
+153it [00:07, 27.99it/s]
+156it [00:07, 26.12it/s]
+159it [00:07, 26.23it/s]
+162it [00:07, 26.32it/s]
+165it [00:07, 25.01it/s]
+168it [00:07, 24.86it/s]
+171it [00:07, 25.46it/s]
+175it [00:07, 26.43it/s]
+178it [00:08, 24.33it/s]
+181it [00:08, 23.48it/s]
+184it [00:08, 23.36it/s]
+187it [00:08, 23.13it/s]
+190it [00:08, 21.96it/s]
+193it [00:08, 23.60it/s]
+196it [00:08, 24.38it/s]
+199it [00:08, 25.43it/s]
+202it [00:09, 24.81it/s]
+205it [00:09, 23.91it/s]
+208it [00:09, 24.83it/s]
+211it [00:09, 26.11it/s]
+214it [00:09, 24.39it/s]
+217it [00:09, 23.31it/s]
+221it [00:09, 25.33it/s]
+224it [00:09, 26.31it/s]
+227it [00:10, 24.45it/s]
+230it [00:10, 23.36it/s]
+233it [00:10, 24.22it/s]
+237it [00:10, 25.34it/s]
+240it [00:10, 24.01it/s]
+243it [00:10, 24.21it/s]
+246it [00:10, 24.91it/s]
+249it [00:10, 26.20it/s]
+252it [00:11, 24.19it/s]
+255it [00:11, 23.02it/s]
+258it [00:11, 23.87it/s]
+261it [00:11, 25.27it/s]
+264it [00:11, 23.61it/s]
+267it [00:11, 23.05it/s]
+270it [00:11, 24.75it/s]
+274it [00:11, 25.88it/s]
+277it [00:12, 22.97it/s]
+280it [00:12, 23.34it/s]
+283it [00:12, 24.12it/s]
+286it [00:12, 24.40it/s]
+289it [00:12, 23.08it/s]
+292it [00:12, 23.49it/s]
+295it [00:12, 24.15it/s]
+298it [00:12, 24.55it/s]
+301it [00:13, 23.65it/s]
+304it [00:13, 24.24it/s]
+308it [00:13, 26.21it/s]
+311it [00:13, 26.14it/s]
+314it [00:13, 24.62it/s]
+317it [00:13, 24.24it/s]
+320it [00:13, 24.84it/s]
+323it [00:13, 25.85it/s]
+326it [00:14, 25.17it/s]
+329it [00:14, 24.75it/s]
+333it [00:14, 27.53it/s]
+337it [00:14, 28.24it/s]
+340it [00:14, 26.88it/s]
+343it [00:14, 25.92it/s]
+347it [00:14, 28.10it/s]
+351it [00:14, 28.73it/s]
+354it [00:15, 27.24it/s]
+357it [00:15, 22.81it/s]
+361it [00:15, 25.41it/s]
+364it [00:15, 24.94it/s]
+367it [00:15, 24.60it/s]
+371it [00:15, 27.01it/s]
+374it [00:15, 27.65it/s]
+377it [00:16, 27.30it/s]
+380it [00:16, 26.19it/s]
+383it [00:16, 26.37it/s]
+386it [00:16, 27.06it/s]
+390it [00:16, 28.81it/s]
+393it [00:16, 27.21it/s]
+396it [00:16, 26.12it/s]
+400it [00:16, 28.30it/s]
+404it [00:16, 28.96it/s]
+407it [00:17, 27.38it/s]
+410it [00:17, 26.25it/s]
+414it [00:17, 28.19it/s]
+418it [00:17, 28.84it/s]
+421it [00:17, 27.31it/s]
+424it [00:17, 26.23it/s]
+428it [00:17, 27.74it/s]
+432it [00:17, 29.30it/s]
+435it [00:18, 27.61it/s]
+438it [00:18, 26.46it/s]
+442it [00:18, 28.57it/s]
+446it [00:18, 28.97it/s]
+449it [00:18, 27.42it/s]
+452it [00:18, 26.34it/s]
+456it [00:18, 28.55it/s]
+459it [00:18, 24.23it/s]
+/root/anaconda3/envs/ZECL/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Evaluate on all types:
+Type P: 0.721, Type R: 0.759, Type F: 0.709
+Trigger P: 0.906, Trigger R: 0.880, Trigger F: 0.893
+Args P: 0.822, Args R: 0.837, Args F: 0.829
+F1 Mean All: 0.810
+Test set evaluation.
+The number of testing instances: 228
+
+0it [00:00, ?it/s]
+3it [00:00, 21.11it/s]
+6it [00:00, 23.92it/s]
+9it [00:00, 24.78it/s]
+12it [00:00, 25.77it/s]
+15it [00:00, 23.17it/s]
+18it [00:00, 23.89it/s]
+21it [00:00, 24.11it/s]
+24it [00:01, 21.85it/s]
+27it [00:01, 21.22it/s]
+30it [00:01, 22.77it/s]
+33it [00:01, 23.99it/s]
+36it [00:01, 20.85it/s]
+39it [00:01, 21.56it/s]
+42it [00:01, 22.72it/s]
+45it [00:01, 23.61it/s]
+48it [00:02, 22.00it/s]
+51it [00:02, 23.30it/s]
+54it [00:02, 22.82it/s]
+57it [00:02, 22.38it/s]
+60it [00:02, 21.50it/s]
+64it [00:02, 23.54it/s]
+67it [00:02, 24.79it/s]
+70it [00:03, 25.12it/s]
+73it [00:03, 21.92it/s]
+76it [00:03, 23.20it/s]
+79it [00:03, 23.27it/s]
+82it [00:03, 23.05it/s]
+85it [00:03, 23.11it/s]
+88it [00:03, 24.77it/s]
+91it [00:03, 25.39it/s]
+94it [00:04, 24.03it/s]
+97it [00:04, 23.58it/s]
+100it [00:04, 25.03it/s]
+103it [00:04, 25.22it/s]
+106it [00:04, 23.78it/s]
+109it [00:04, 23.19it/s]
+112it [00:04, 23.60it/s]
+115it [00:04, 25.12it/s]
+118it [00:05, 24.47it/s]
+121it [00:05, 24.45it/s]
+124it [00:05, 25.31it/s]
+128it [00:05, 27.07it/s]
+131it [00:05, 25.62it/s]
+134it [00:05, 24.10it/s]
+137it [00:05, 25.54it/s]
+140it [00:05, 23.14it/s]
+143it [00:06, 22.22it/s]
+146it [00:06, 23.40it/s]
+149it [00:06, 23.42it/s]
+152it [00:06, 23.26it/s]
+155it [00:06, 23.05it/s]
+158it [00:06, 22.69it/s]
+161it [00:06, 23.97it/s]
+164it [00:06, 23.29it/s]
+167it [00:07, 21.73it/s]
+170it [00:07, 22.88it/s]
+173it [00:07, 24.19it/s]
+176it [00:07, 22.88it/s]
+179it [00:07, 22.23it/s]
+182it [00:07, 24.08it/s]
+185it [00:07, 24.80it/s]
+188it [00:08, 22.36it/s]
+191it [00:08, 22.46it/s]
+194it [00:08, 23.95it/s]
+198it [00:08, 23.02it/s]
+201it [00:08, 23.54it/s]
+205it [00:08, 26.12it/s]
+209it [00:08, 28.19it/s]
+212it [00:08, 28.11it/s]
+215it [00:09, 25.78it/s]
+219it [00:09, 26.97it/s]
+222it [00:09, 26.72it/s]
+225it [00:09, 24.21it/s]
+228it [00:09, 23.62it/s]
+228it [00:09, 23.77it/s]
+TI: P:90.8, R:86.9, F:88.8
+TC: P:79.8, R:79.3, F:79.5
+AI: P:75.1, R:76.4, F:75.7
+AC: P:73.6, R:74.9, F:74.2
